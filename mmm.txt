@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    top: 8px;
+    background: lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.pagina {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.JoeriFoto {
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    float: right;
+}
+
+.knop {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
