@@ -3,7 +3,6 @@ html, body {
     position: relative;
 
     height: 100vh;
-    overflow: hidden;
 
     margin: 0;
     padding: 0;
@@ -16,6 +15,7 @@ html, body {
     top: 20px;
     left: 2.5vw;
     right: 2.5vw;
+
     border-radius: 20px;
 
     text-align: center;
@@ -58,5 +58,30 @@ html, body {
     border-radius: 20px;
     /*
     max-width: 100%; */
-    /* float: right; */
+    margin-right: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
 } 
+
+.JoeriFoto2 {
+    display: block;            /* prevents inline spacing issues */
+    width: 100%;               /* makes the image fill its container */
+    max-width: 20%;            /* limits to 20% of parent */
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;         /* better for curved corners visually */
+    margin: 10px;
+} 
+
+.foto-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.text {
+    margin: 20px;
+}
