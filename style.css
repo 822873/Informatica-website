@@ -95,18 +95,6 @@ html, body {
     color: #0077b5;
 }
 
-.bg-slide {
-  background: linear-gradient(270deg, #00f, #0ff, #0f0, #ff0, #f00);
-  background-size: 800% 800%;
-  animation: slideBG 8s ease infinite;
-}
-
-@keyframes slideBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 nav.navbar {
     display: flex;
     justify-content: space-between;
