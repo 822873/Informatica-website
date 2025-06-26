@@ -42,7 +42,7 @@ html, body {
 
 .JoeriFoto {
     object-fit: contain;
-    width: 20%;
+    width: 25%;
     height: auto;
     border-radius: 20px;
     margin-right: 40px;
@@ -75,7 +75,7 @@ html, body {
 .text {
     flex: 1;
     text-align: center;  
-    margin: 20px;
+    margin: 40px;
 }
 
 .socials {
@@ -149,7 +149,7 @@ ul.nav-links li a {
 }
 
 ul.nav-links li a:hover {
-    transform: scale(1.2) translateY(-4px);
+    transform: scale(1.15) translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -167,7 +167,7 @@ ul.nav-links li a:hover {
     border-radius: 2px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     ul.nav-links {
         display: none;
         flex-direction: column;

@@ -6,7 +6,7 @@ hamburger.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1000) {
     navLinks.classList.remove('active');
   }
 });
