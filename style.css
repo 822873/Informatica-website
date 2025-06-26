@@ -23,7 +23,7 @@ html, body {
     /* fade-in animation */
     opacity: 0;
     animation: fadeIn 1.5s ease forwards;
-    animation-delay: 0.3s; /* optional: slight delay */
+    animation-delay: 0.3s;
 }
 
 @keyframes fadeIn {
@@ -42,7 +42,7 @@ html, body {
 
 .JoeriFoto {
     object-fit: contain;
-    width: 15%;
+    width: 20%;
     height: auto;
     border-radius: 20px;
     margin-right: 40px;
@@ -53,20 +53,23 @@ html, body {
 } 
 
 .JoeriFoto2 {
-    display: block;            /* prevents inline spacing issues */
-    width: 100%;               /* makes the image fill its container */
-    max-width: 20%;            /* limits to 20% of parent */
+    display: block;
+    width: 100%;
+    max-width: 20%;
     height: auto;
     border-radius: 20px;
-    object-fit: cover;         /* better for curved corners visually */
+    object-fit: cover; 
     margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 } 
 
 .foto-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 40px;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .text {
@@ -79,7 +82,7 @@ html, body {
     margin-top: 20px;
     display: flex;
     gap: 15px;
-    justify-content: center; /* of left/right als je dat wil */
+    justify-content: center;
 }
 
 .socials a {
@@ -89,7 +92,7 @@ html, body {
 }
 
 .socials a:hover {
-    color: #0077b5; /* bijv. LinkedIn blauw, of een eigen kleur */
+    color: #0077b5;
 }
 
 .bg-slide {
@@ -185,5 +188,29 @@ ul.nav-links li a:hover {
     .hamburger {
         display: flex;
     }
+}
+
+.JoeriFoto2:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  height: 50%;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
 }
 
